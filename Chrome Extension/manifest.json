@@ -1,0 +1,39 @@
+{
+    "name": "MyMarket Filter",
+    "version": "1.0",
+    "description": "Filtering concrete website",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "nativeMessaging"
+    ],
+    "host_permissions": [
+        "https://*.mymarket.ge/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "assets/MarsLogo.png",
+            "32": "assets/MarsLogo.png",
+            "48": "assets/MarsLogo.png",
+            "128": "assets/MarsLogo.png"
+        }
+    },
+    "icons": {
+        "16": "assets/MarsLogo.png",
+        "32": "assets/MarsLogo.png",
+        "48": "assets/MarsLogo.png",
+        "128": "assets/MarsLogo.png"
+    },
+    "options_page": "options.html",
+    "externally_connectable": {
+        "matches": [
+            "*://*.mymarket.ge/*"
+        ]
+    }
+}
